@@ -28,7 +28,7 @@ export default {
   overflow: auto
   top: 50px
   width 100%
-  height: 6000px
+  height: 5500px
   left: 0
   text-align center
   background-color #ffffff

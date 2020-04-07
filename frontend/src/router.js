@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Landing from './views/Landing.vue'
 import SingUp from './views/SingUp.vue'
+import Close from './views/Close.vue'
 
 Vue.use(Router)
 
@@ -18,6 +19,11 @@ export default new Router({
       path: '/signup',
       name: 'SingUp',
       component: SingUp,
+    },
+    {
+      path: '/close',
+      name: 'Close',
+      component: Close,
     }
     // {
     //   path: '/about',
