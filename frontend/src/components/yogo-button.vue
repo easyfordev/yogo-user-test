@@ -1,12 +1,21 @@
 <template>
   <div class="yogo-button">
-    <h3 id="label">YOGO 시작하기</h3>
+    <button id="goyogo" @click="clickBtn">YOGO 시작하기</button>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'YogoButton'
+  name: 'YogoButton',
+  methods: {
+    clickBtn: function () {
+      this.$ga.event('category', 'action', 'label', 123)
+
+      this.$router.push({
+        name: 'SingUp'
+      })
+    }
+  }
 }
 </script>
 
@@ -19,7 +28,15 @@ export default {
   left 0
   width: 100%
   height: 50px
-  background-color: #F13447
 #label
   color #000000
+#goyogo
+  position absolute
+  left 0
+  top 0
+  width 100%
+  height 100%
+  font-size 20px
+  color #ffffff
+  background-color #f43142
 </style>
