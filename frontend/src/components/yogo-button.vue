@@ -9,7 +9,7 @@ export default {
   name: 'YogoButton',
   methods: {
     clickBtn: function () {
-      this.$ga.event('category', 'action', 'label', 123)
+      this.$ga.event('Button click', 'YOGO 하기', 'YOGO하기', 1234)
 
       this.$router.push({
         name: 'SingUp'
